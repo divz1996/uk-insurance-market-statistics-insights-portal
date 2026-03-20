@@ -1,9 +1,9 @@
 # =============================================================
-# UK Insurance Market Statistics & Insights Portal
+# UK Insurance Market Statistics & Insights Portal (SQL + Power BI + Excel + Python)
 # Author: Divyansh Verma
-# Description: I built this script to clean raw insurance claims
-#              data and transform it into a star schema ready
-#              for SQL analysis and Power BI reporting.
+# Description: I built this script to simulate ABI-style insurance market
+#              statistics, subscriptions and helpdesk simulation. I clean,
+#              model and push a star schema ready for SQL and Power BI reporting.
 # =============================================================
 
 import csv
