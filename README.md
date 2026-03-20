@@ -81,14 +81,67 @@ text
 
 ---
 
-## Key Insights & Recommendations
+## Insights & Recommendations
 
-- Identified **underperforming regions** with above-average SLA breach rates and longer average settlement days
-- Highlighted **high-leakage products** contributing disproportionately to total claims cost
-- Proposed targeted **process and resourcing changes** to reduce breach rates and improve settlement efficiency
-- Dashboard designed for leadership consumption — KPI cards, trend lines, and SLA/leakage deep-dive page
+All insights are derived from the dataset fields: `fraud_reported`,
+`incident_severity`, `total_claim_amount`, `incident_type`, `policy_state`,
+`policy_deductable`, `bodily_injuries`, and `police_report_available`.
 
 ---
+
+### Insight 1 — Fraud Flags Are Concentrated in Specific Incident Types
+A material proportion of claims carry a `fraud_reported = Y` flag. Analysis
+shows this is not evenly distributed — certain incident types (particularly
+theft and collision claims) account for a disproportionate share of flagged
+cases. Fraudulent claims inflate total payout figures and skew average cost
+metrics if not separated out.
+
+**Recommendation:** Theft and collision claims with bodily injury involvement
+should require police report confirmation (`police_report_available`) before
+settlement is authorised. The business should route high-fraud-rate incident
+types to an enhanced validation queue rather than standard processing.
+
+---
+
+### Insight 2 — Incident Severity is the Primary Driver of Claim Cost
+Total Loss and Major Damage incidents carry significantly higher
+`total_claim_amount` values than Minor or Trivial claims. The majority of total
+payout is driven by a relatively small number of high-severity cases.
+
+**Recommendation:** Reserving and handler capacity should be weighted toward
+Total Loss and Major Damage cases. Routing these to specialist handlers at FNOL
+will reduce settlement time and leakage on the claims that matter most to the
+cost base.
+
+---
+
+### Insight 3 — Regional Claim Volume and Cost Are Uneven
+`policy_state` (mapped to regions) shows clear variation in both claim volume
+and average `total_claim_amount`. Some regions generate high volumes of
+lower-cost claims; others show lower volume but significantly higher average
+cost per claim.
+
+---
+
+### Insight 4 — Third-Party Claims Carry Higher Complexity
+Claims mapped to third-party incident types show elevated `bodily_injuries` and
+`number_of_vehicles_involved` values, contributing to greater settlement
+complexity and higher average costs compared to single-vehicle incidents.
+
+**Recommendation:** Third-party claims involving bodily injuries should be
+escalated to specialist handlers on receipt to reduce settlement time and
+control costs on the most complex cases.
+
+---
+
+### Insight 5 — Lower Deductible Policies Drive Higher Claim Frequency
+Policies with a `policy_deductable` of 500 generate more frequent claims,
+including a higher proportion of minor and trivial severity incidents. Higher
+deductible policies (1000, 2000) show lower frequency but higher average cost
+per claim.
+
+---
+
 
 ## Tools & Technologies
 
