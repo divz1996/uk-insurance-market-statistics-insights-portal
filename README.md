@@ -51,7 +51,7 @@ The dataset and schema are designed to replicate the structure a Claims Operatio
 | `vw_Claims_By_Product` | Product-level claims performance and settlement analysis |
 | `vw_Claims_SLA_Breach` | Deep-dive into breach drivers by region, product and claim type |
 
-All views are defined in `data/insurance_claims_schema.sql`.
+All views are defined in `data/abi_star_schema_and_mi_views.sql`.
 
 ---
 
@@ -67,9 +67,9 @@ uk-insurance-market-statistics-insights-portal/
 |   +-- dim_product.csv                    # Dimension: Product
 |   +-- dim_claimtype.csv                  # Dimension: Claim Type
 |   +-- dim_date.csv                       # Dimension: Date
-|   +-- insurance_claims_schema.sql        # Star schema DDL + MI views
+|   +-- abi_star_schema_and_mi_views.sql  # ABI-style star schema DDL + MI views
 |
-+-- README.md
++-- abi_market_statistics_pipeline.py    # ABI-style data pipeline: cleaning, star schema build, GitHub push
 +-- LICENSE
 ```
 
