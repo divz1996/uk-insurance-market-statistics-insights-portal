@@ -58,3 +58,54 @@ All views are defined in `data/abi_star_schema_and_mi_views.sql`.
 
 ## Repository Structure
 
+uk-insurance-market-statistics-insights-portal/
+|
++-- data/
+| +-- cleaned_insurance_claims.csv # Raw cleaned source data
+| +-- fact_claims.csv # Fact table
+| +-- dim_region.csv # Dimension: Region
+| +-- dim_product.csv # Dimension: Product
+| +-- dim_claimtype.csv # Dimension: Claim Type
+| +-- dim_date.csv # Dimension: Date
+| +-- abi_star_schema_and_mi_views.sql # ABI-style star schema DDL + MI views
+| +-- abi_claims_dashboard.pbix # Power BI source file
+|
++-- reports/
+| +-- abi_mi_report.xlsx # Excel MI report: KPI + Regional + Product + Monthly
+| +-- abi_claims_dashboard.pdf # Power BI dashboard export (2 pages)
+|
++-- abi_market_statistics_pipeline.py # Python data pipeline: cleaning, star schema build, GitHub push
++-- LICENSE
+
+text
+
+---
+
+## Key Insights & Recommendations
+
+- Identified **underperforming regions** with above-average SLA breach rates and longer average settlement days
+- Highlighted **high-leakage products** contributing disproportionately to total claims cost
+- Proposed targeted **process and resourcing changes** to reduce breach rates and improve settlement efficiency
+- Dashboard designed for leadership consumption — KPI cards, trend lines, and SLA/leakage deep-dive page
+
+---
+
+## Tools & Technologies
+
+| Tool | Usage |
+|---|---|
+| **SQL** | Star schema design, MI views, data transformation |
+| **Power BI** | Two-page dashboard — KPI cards, trend charts, SLA analysis |
+| **DAX** | Calculated measures for breach rate, leakage %, MoM trends |
+| **Power Query (M)** | Data shaping and ETL within Power BI |
+| **Excel** | MI report for operational stakeholders |
+| **Python** | Data cleaning, star schema generation, GitHub automation |
+| **Google Colab** | Cloud-based Python execution and direct GitHub push |
+
+---
+
+## Author
+
+**Divyansh Dubey**  
+MBA — University of Bath | Data & Claims Analytics  
+[GitHub](https://github.com/divz1996) · [LinkedIn](https://www.linkedin.com/in/divyanshdubey96)
