@@ -1,0 +1,11 @@
+claim_type_key,claim_type,claim_category,severity_band
+CT01,Single Vehicle Collision,Motor,High
+CT02,Multi-vehicle Collision,Motor,High
+CT03,Vehicle Theft,Motor,Medium
+CT04,Parked Car Damage,Motor,Low
+CT05,Home Structural Damage,Home,High
+CT06,Home Contents Loss,Home,Medium
+CT07,Employer Liability Claim,Liability,High
+CT08,Public Liability Claim,Liability,Medium
+CT09,Travel Medical Claim,Travel,Medium
+CT10,Travel Cancellation,Travel,Low
