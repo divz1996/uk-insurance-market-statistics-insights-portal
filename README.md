@@ -100,6 +100,6 @@ uk-insurance-market-statistics-insights-portal/
 
 ## Author
 
-**Divyansh Verma**  
+**Divyansh Dubey**  
 MBA — University of Bath | Data & Claims Analytics  
-[GitHub](https://github.com/divz1996) · [LinkedIn](https://www.linkedin.com/in/divyansh-verma96)
+[GitHub](https://github.com/divz1996) · [LinkedIn](https://www.linkedin.com/in/divyanshdubey96)
