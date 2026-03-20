@@ -1,4 +1,5 @@
 # UK Insurance Market Statistics & Insights Portal (SQL + Power BI + Excel + Python)
+
 > Insurance market statistics, ABI-style subscriptions and helpdesk simulation
 > **Tools:** SQL · Power BI · DAX · Power Query (M) · Excel · Python
 
@@ -6,13 +7,13 @@
 
 ## Project Overview
 
-An end-to-end business intelligence project built around **ABI-style insurance market statistics**, simulating the subscriptions, data flows and helpdesk queries typical of a real market statistics portal. The project is scoped around the operational needs of a **Head of Claims Operations** — covering claims volume, cost, SLA performance and regional/product trends — and delivers a full star schema data model, MI SQL views, and a two-page Power BI dashboard.
+An end-to-end business intelligence project I built around **ABI-style insurance market statistics**, simulating the subscriptions, data flows and helpdesk queries typical of a real market statistics portal. I scoped this project around the operational needs of a **Head of Claims Operations** — covering claims volume, cost, SLA performance and regional/product trends — and deliver a full star schema data model, MI SQL views, and a two-page Power BI dashboard.
 
 ---
 
 ## ABI-Style Simulation Context
 
-This project is modelled on the type of **market statistics portal** operated by the Association of British Insurers (ABI) and similar industry bodies. It simulates:
+I modelled this project on the type of **market statistics portal** operated by the Association of British Insurers (ABI) and similar industry bodies. It simulates:
 
 - **Subscriptions** — organisations subscribing to receive regular claims and market performance data feeds
 - **Helpdesk queries** — internal and external stakeholders raising questions about data definitions, SLA metrics, and regional breakdowns
@@ -55,56 +56,5 @@ All views are defined in `data/abi_star_schema_and_mi_views.sql`.
 
 ---
 
-## 73
+## Repository Structure
 
-```
-uk-insurance-market-statistics-insights-portal/
-|
-+-- data/
-|   +-- cleaned_insurance_claims.csv       # Raw cleaned source data
-|   +-- fact_claims.csv                    # Fact table
-|   +-- dim_region.csv                     # Dimension: Region
-|   +-- dim_product.csv                    # Dimension: Product
-|   +-- dim_claimtype.csv                  # Dimension: Claim Type
-|   +-- dim_date.csv                       # Dimension: Date
-|   +-- abi_star_schema_and_mi_views.sql  # ABI-style star schema DDL + MI views
-|    +-- abi_claims_dashboard.pbix        # Power BI source file
-|
-|    +-- reports/                                      # Reports and exports
-|    +-- abi_mi_report.xlsx              # Excel MI report: KPI + Regional + Product + Monthly
-|    +-- abi_claims_dashboard.pdf        # Power BI dashboard export (2 pages)
-|
-+-- abi_market_statistics_pipeline.py    # ABI-style data pipeline: cleaning, star schema build, GitHub push
-+-- LICENSE
-```
-
----
-
-## Key Insights & Recommendations
-
-- Identified **underperforming regions** with above-average SLA breach rates and longer average settlement days
-- Highlighted **high-leakage products** contributing disproportionately to total claims cost
-- Proposed targeted **process and resourcing changes** to reduce breach rates and improve settlement efficiency
-- Dashboard designed for leadership consumption — KPI cards, trend lines, and SLA/leakage deep-dive page
-
----
-
-## Tools & Technologies
-
-| Tool | Usage |
-|---|---|
-| **SQL** | Star schema design, MI views, data transformation |
-| **Power BI** | Two-page dashboard — KPI cards, trend charts, SLA analysis |
-| **DAX** | Calculated measures for breach rate, leakage %, MoM trends |
-| **Power Query (M)** | Data shaping and ETL within Power BI |
-| **Excel** | MI report for operational stakeholders |
-| **Python** | Data cleaning, star schema generation, GitHub automation |
-| **Google Colab** | Cloud-based Python execution and direct GitHub push |
-
----
-
-## Author
-
-**Divyansh Dubey**  
-MBA — University of Bath | Data & Claims Analytics  
-[GitHub](https://github.com/divz1996) · [LinkedIn](https://www.linkedin.com/in/divyanshdubey96)
