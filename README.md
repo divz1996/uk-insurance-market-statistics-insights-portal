@@ -55,7 +55,7 @@ All views are defined in `data/abi_star_schema_and_mi_views.sql`.
 
 ---
 
-## Repository Structure
+## 73
 
 ```
 uk-insurance-market-statistics-insights-portal/
@@ -68,6 +68,11 @@ uk-insurance-market-statistics-insights-portal/
 |   +-- dim_claimtype.csv                  # Dimension: Claim Type
 |   +-- dim_date.csv                       # Dimension: Date
 |   +-- abi_star_schema_and_mi_views.sql  # ABI-style star schema DDL + MI views
+|    +-- abi_claims_dashboard.pbix        # Power BI source file
+|
+|    +-- reports/                                      # Reports and exports
+|    +-- abi_mi_report.xlsx              # Excel MI report: KPI + Regional + Product + Monthly
+|    +-- abi_claims_dashboard.pdf        # Power BI dashboard export (2 pages)
 |
 +-- abi_market_statistics_pipeline.py    # ABI-style data pipeline: cleaning, star schema build, GitHub push
 +-- LICENSE
