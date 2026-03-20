@@ -1,0 +1,16 @@
+product_key,product_name,product_line,coverage_type
+P01,Motor Comprehensive,Motor,Comprehensive
+P02,Motor Third Party Fire and Theft,Motor,TPFT
+P03,Motor Third Party Only,Motor,TPO
+P04,Home Buildings,Home,Buildings
+P05,Home Contents,Home,Contents
+P06,Home Combined,Home,Combined
+P07,Employers Liability,Liability,Employers
+P08,Public Liability,Liability,Public
+P09,Professional Indemnity,Liability,Professional
+P10,Travel Single Trip,Travel,Single Trip
+P11,Travel Annual Multi-Trip,Travel,Annual
+P12,Pet Dog,Pet,Dog
+P13,Pet Cat,Pet,Cat
+P14,Commercial Vehicle,Commercial,Vehicle
+P15,Commercial Property,Commercial,Property
