@@ -1,12 +1,24 @@
-# UK Insurance Market Statistics & Insights Portal
-
+# UK Insurance Market Statistics & Insights Portal (SQL + Power BI + Excel + Python)
+> Insurance market statistics, ABI-style subscriptions and helpdesk simulation
 > **Tools:** SQL · Power BI · DAX · Power Query (M) · Excel · Python
 
 ---
 
 ## Project Overview
 
-An end-to-end business intelligence project simulating ABI-style insurance market analytics for a **Head of Claims Operations**. Built to answer strategic operational questions on claims volume, cost, SLA performance, and regional/product trends — using a full star schema data model, MI SQL views, and a two-page Power BI dashboard.
+An end-to-end business intelligence project built around **ABI-style insurance market statistics**, simulating the subscriptions, data flows and helpdesk queries typical of a real market statistics portal. The project is scoped around the operational needs of a **Head of Claims Operations** — covering claims volume, cost, SLA performance and regional/product trends — and delivers a full star schema data model, MI SQL views, and a two-page Power BI dashboard.
+
+---
+
+## ABI-Style Simulation Context
+
+This project is modelled on the type of **market statistics portal** operated by the Association of British Insurers (ABI) and similar industry bodies. It simulates:
+
+- **Subscriptions** — organisations subscribing to receive regular claims and market performance data feeds
+- **Helpdesk queries** — internal and external stakeholders raising questions about data definitions, SLA metrics, and regional breakdowns
+- **MI reporting cadence** — monthly and quarterly reporting cycles typical of a UK insurance market statistics function
+
+The dataset and schema are designed to replicate the structure a Claims Operations team would use when consuming ABI-style statistics for performance benchmarking and regulatory insight.
 
 ---
 
